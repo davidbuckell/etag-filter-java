@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ETAG_HEADER="$1"
-URL="http://localhost:8080/items/1"
-#URL="https://etag-java-v1-adh5h7cwanhxd2ee.uksouth-01.azurewebsites.net/items/1"
+#URL="http://localhost:8080/items/1"
+URL="etag-java-shallowetagheader-d4bahjgmedcdazaa.uksouth-01.azurewebsites.net/items/1"
 
 while true; do
   RESPONSE=$(curl -s -i -H "If-None-Match: \"$ETAG_HEADER\"" "$URL")
